@@ -1,0 +1,19 @@
+{
+  "name": "MarketDataBot",
+  "description": "Provides real-time stock prices using Yahoo Finance.",
+  "version": "1.0",
+  "endpoint": "http://localhost:8000/price",
+  "tasks": [
+    {
+      "name": "get_price",
+      "description": "Returns the latest price for a stock symbol.",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "symbol": { "type": "string" }
+        },
+        "required": ["symbol"]
+      }
+    }
+  ]
+}
