@@ -25,3 +25,9 @@ uvicorn app:app --reload --port 8000
 curl -X POST "http://localhost:8000/price" -H "Content-Type: application/json" -d '{"symbol": "AAPL"}'
 curl http://localhost:8000/.well-known/agent.json
 ```
+
+## Testing
+
+```bash
+pytest
+```
